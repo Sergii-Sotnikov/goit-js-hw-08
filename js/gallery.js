@@ -75,6 +75,7 @@ function handleShowImage(event) {
   console.log("event.target: ", event.target.dataset.source);
   const imageID = event.target.dataset.source;
   const findImage = images.find((el) => (el.original = imageID));
+  console.log(findImage);
   openModal(findImage);
 }
 
@@ -106,7 +107,7 @@ function openModal(image) {
   instance = basicLightbox.create(
     `
     <div class="modal">
-        <img src="${image.original}"
+        <img src="${image.original}" width="1112" height="640"
     </div>
 `,
     {
