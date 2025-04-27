@@ -25,5 +25,5 @@ ul {
 background-color: black;
 }
 a:hover {
-    cursor: url(/images/bxs_hand-down.png), pointer;
+    cursor: url(./images/bxs_hand-down.png), pointer;
 }
